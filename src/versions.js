@@ -13,11 +13,8 @@ export function getBrowser() {
         isAndroid,
         isIos,
         isWechat: /micromessenger\/([\d.]+)/i.test(ua),
-        isWeibo: /(weibo).*weibo__([\d.]+)/i.test(ua),
         isQQ: /qq\/([\d.]+)/i.test(ua),
         isQQBrowser: /(qqbrowser)\/([\d.]+)/i.test(ua),
-        isQzone: /qzone\/.*_qz_([\d.]+)/i.test(ua),
         isOriginalChrome: /chrome\/[\d.]+ Mobile Safari\/[\d.]+/i.test(ua) && isAndroid,
-        isSafari: /safari\/([\d.]+)$/i.test(ua) && isIos && ua.indexOf('Crios') < 0 && ua.indexOf('Mozilla') === 0
     };
 }
