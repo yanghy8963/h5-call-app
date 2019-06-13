@@ -28,17 +28,17 @@ callLib.open({
 ## scheme
 类型：object
 （必填）Url Scheme相关参数
-### protocol
+#### protocol
 类型：string
 地址协议
 
 ## universal
 类型：object
 iOS universal url相关配置
-### host
+#### host
 类型：string
 域名
-### pathKey
+#### pathKey
 类型：string
 pathKey，需要与APP开发人员确认
 
@@ -59,12 +59,12 @@ iOS的App Store地址
 类型：object
 接收一个object类型，参数定义如下：
 
-### path
+#### path
 类型：string
 （必填）跳转的页面地址，如'index/'（host不填，因为在初始化时已传递）
-### params
+#### params
 类型：object
 universal link时有用，用来拼凑query，如：{ key1: 'value1', key2: 'value2' }
-### callback
+#### callback
 类型：function
 唤起APP失败时调用，会覆盖默认的fallback链接跳转呦！
