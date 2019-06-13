@@ -1,0 +1,54 @@
+{
+    "name": "h5-call-app",
+    "version": "1.0.5",
+    "description": "call native APP from web pages",
+    "main": "dist/index.umd.js",
+    "license": "MIT",
+    "author": {
+        "name": "Haoyi",
+        "email": "yanghy89632@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/yanghy8963/h5-call-app/issues"
+    },
+    "homepage": "https://github.com/yanghy8963/h5-call-app",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yanghy8963/h5-call-app.git"
+    },
+    "keywords": [
+        "universalLink",
+        "schema",
+        "scheme",
+        "native",
+        "h5"
+    ],
+    "scripts": {
+        "precommit": "yarn install && lint-staged",
+        "fix": "eslint --ext .js,.vue src --fix"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^8.0.3",
+        "babel-plugin-external-helpers": "^6.22.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-runtime": "^6.26.0",
+        "eslint": "^4.12.1",
+        "eslint-plugin-html": "^4.0.1",
+        "husky": "^0.14.3",
+        "lint-staged": "^8.1.0",
+        "rollup": "^0.68.1",
+        "rollup-plugin-babel": "^3.0.7",
+        "rollup-plugin-commonjs": "^9.1.3",
+        "rollup-plugin-eslint": "^5.0.0",
+        "rollup-plugin-node-resolve": "^3.3.0",
+        "rollup-plugin-uglify": "^6.0.0"
+    },
+    "lint-staged": {
+        "src/*.{js}": [
+            "eslint --fix",
+            "git add"
+        ]
+    }
+}
